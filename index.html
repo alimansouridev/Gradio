@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>*Gradio*</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+
+      #calculator {
+        margin: 50px auto;
+        width: 300px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .gradeInput {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="calculator">
+      <h2>Calculateur de notes</h2>
+
+      <form id="gradesForm">
+        <div id="gradeInputs"></div>
+
+        <button type="button" onclick="addGradeInput()">Ajouter une note</button
+        ><br /><br />
+
+        <button type="button" onclick="calculateAverage()">
+          Calculer la moyenne
+        </button>
+      </form>
+
+      <p id="result"></p>
+
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
